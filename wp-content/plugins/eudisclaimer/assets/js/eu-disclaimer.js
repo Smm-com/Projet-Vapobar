@@ -13,28 +13,29 @@ function creerUnCookie(nomCookie, valeurCookie, dureeJours){
      // Si le nombre de jours est spécifié
      if(dureeJours){ 
         var date = new Date(); 
+       
         // Converti le nombre de jours spécifiés en millisecondes
-
         date.setTime(date.getTime() + (dureeJours * 24 * 60 * 60 * 1000 )); 
         var expire = "; expire="+date.toGMTString(); 
      } 
-     // Si aucune valeur de jour n'est spécifiée 
+     // Si aucune valeur n'est spécifiée 
     else
      var expire = ""; 
 
      document.cookie = nomCookie + "=" + valeurCookie + expire + "; path=/"; } 
 
+     function lireUnCookie(nomCookie){
 
-     function lireUnCookie(nomCookie){ 
-        // Ajoute le signe égale virgule au nom pour la recherche dans le tableau conteant tous les cookies var
-
-       nomFormate = nomCookie + "="; // tableau contenant tous les cookies 
-       
-       var tableauCookies = document.cookie.split(';'); // Recherche dans le tableau le cookie en question
+    // Tableau contenant tous les cookies 
+       nomFormate = nomCookie + "="; 
+    
+    // Recherche du cookie dans le tableau  
+       var tableauCookies = document.cookie.split(';'); 
 
        for(var i=0; i < tableauCookies.length; i++) { 
             var cookieTrouve = tableauCookies[i]; 
-                // Tant que l'on trouve un espace on le supprime 
+        
+           // Suppression des espaces
             while (cookieTrouve.charAt(0) == ' ') { 
                 cookieTrouve = cookieTrouve.substring(1, cookieTrouve.length); 
                 } 
@@ -42,11 +43,11 @@ function creerUnCookie(nomCookie, valeurCookie, dureeJours){
             return cookieTrouve.substring(nomFormate.length, cookieTrouve.length); 
                 } 
         } 
-        // On retourne une valeur null dans le cas où aucun cookie n'est trouvé
+        // Retourne une valeur nulle si aucun cookie trouvé
         return null; 
     } 
 
-        // Création d'une fonction que l'on va associer au bouton Oui de notre modal par le biais de onclick.
+        // Création d'une fonction que l'on va associer au bouton Oui de la modale
         function accepterLeDisclaimer(){ 
 
             creerUnCookie('eu-disclaimer-vapobar', "ejD86j7ZXF3x", 1); 
