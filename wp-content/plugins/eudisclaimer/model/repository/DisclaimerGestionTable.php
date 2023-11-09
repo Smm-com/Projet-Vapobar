@@ -95,8 +95,8 @@ class DisclaimerGestionTable {
 
         $lien_redirection = $row->redirection_ko; 
 
-        // echo '<div id="monModal" class="modal">
-        return '<div id="monModal" class="modal">
+        // echo '<div id="monModal" class="modal" style="background-color: rgba(157, 62, 12, 0.75);">
+        return '<div id="monModal" class="modal" style="background-color: rgba(157, 62, 12, 0.75);">
 
                 <p>Bienvenue au Vapobar !</p>
 
