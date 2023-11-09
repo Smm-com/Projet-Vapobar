@@ -17,7 +17,7 @@
 
  ?>
 
-<!-- ["message_disclaimer"]=> string(9) "Ho Ho Ho " ["redirection_ko"]=> string(14) "www.google.com" } -->
+<!-- ["message_disclaimer"]=> string(9) "Ho Ho Ho " ["redirection_ko"]=> string(14) "www.qwant.com" } -->
 
 
 
