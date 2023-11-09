@@ -27,7 +27,7 @@
 
 <h2>Configuration</h2>
 
-<p><strong style="color:green"><?php echo @$message; ?></strong></p>
+<p><strong style="color:black"><?php echo @$message; ?></strong></p>
 
 <form method="post" action="" novalidate="novalidate">
 
