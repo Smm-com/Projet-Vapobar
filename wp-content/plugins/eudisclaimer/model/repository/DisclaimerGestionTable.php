@@ -12,7 +12,7 @@ class DisclaimerGestionTable {
         $message = new DisclaimerOptions(); 
         // $message = new DisclaimerOptions(0, "Au regard de la loi européenne, 
         // vous devez nous confirmer que vous avez plus
-        // de 18 ans pour visiter ce site ?", "https://www.google.com/");
+        // de 18 ans pour visiter ce site", "https://www.qwant.com/");
         
         // On alimente l'objet du message
         $message->setMessageDisclaimer(
@@ -98,7 +98,7 @@ class DisclaimerGestionTable {
         // echo '<div id="monModal" class="modal">
         return '<div id="monModal" class="modal">
 
-                <p>Le vapobar, vous souhaite la bienvenue ! </p>
+                <p>Bienvenue au Vapobar !</p>
 
                 <p>'. $message_disclaimer . '</p>
                 
