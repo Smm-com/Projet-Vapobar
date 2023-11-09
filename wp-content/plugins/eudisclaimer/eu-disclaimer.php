@@ -1,7 +1,7 @@
 <?php 
 /** 
 * Plugin Name: eu-disclaimer 
-* Plugin URI: http://URL_de_l_extension 
+* Plugin URI: https://github.com/Smm-com/Projet-Vapobar
 * Description: Plugin sur la législation des produits à base de nicotine. 
 * Version: 1.5
 * Author: SmmCom
